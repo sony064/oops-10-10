@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a[100],n;
+    cin>>n;
+    for (int i=0; i < n; i++) 
+    cin>>a[i];
+    int mc= 0;
+  for (int i=0; i<n; i++)
+  {
+   int c=1;
+   for (int j=i+1;j<n;j++)
+       if (a[i]==a[j])
+           c++;
+   if (c>mc)
+      mc=c;
+  }
+  for (int i=0;i<n;i++)
+  {
+   int c=1;
+   for (int j=i+1;j<n;j++)
+       if (a[i]==a[j])
+           c++;
+   if (c==mc)
+       cout<<"most occured no=" <<a[i];
+  }
+return 0;
+}
