@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main() 
+{
+   int n, sum=0, i;
+   cin>>n;
+   do
+   {
+   sum=sum+i;
+     i++;
+   cout<<"Sum of first "<<n<<" natural numbers is "<<sum;
+   }
+   while(i<=n);
+   return 0;
+}
