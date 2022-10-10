@@ -1,0 +1,18 @@
+#include<iostream>
+#include<Math.h>
+using namespace std;
+int main()
+{
+ int no;
+ cout<<"number= ";
+ cin>>no;
+ if(no >=0 )
+ {
+ 	cout<<"square root  "<<sqrt(no);	
+ }
+ else
+ {
+ 		cout<<"invalid";
+ }
+return 0;
+}
