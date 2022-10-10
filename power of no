@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int b,e,i,r=1;
+    cout<<"base= ";
+    cin>>b;
+    cout<<"exponent= ";
+    cin>>e;
+    for(i=0;i<e;i++)
+    {
+    	r=r*b;
+	}
+	cout<<"power of no= "<<r;
+	return 0;
+}
